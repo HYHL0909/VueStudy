@@ -21,11 +21,17 @@
         <!-- <div v-on:click="handleClick">{{msg}}</div> -->
         <!-- v-on:click==@click -->
         <div @click="handleClick">{{msg}}</div>
+
+        <div v-bind:title="'del '+title">hello world</div>
+        <div :title="'del '+title">{{number}}</div>
+        <input v-model:value="number"/>
+        <div>{{number}}</div>
       </div>
     <script>
         new Vue({
             el:"#root",
             data:{
+                title:"this is hello world",
                 msg:"you can click here to have a try",
                 number:123,
                 content:"<h1>hello</h1>",          
