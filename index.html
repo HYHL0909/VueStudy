@@ -18,7 +18,9 @@
         <div v-text="content"></div>
         <div v-html="content"></div>
         <h1>{{number}}</h1>
-        <div v-on:click="handleClick">{{msg}}</div>
+        <!-- <div v-on:click="handleClick">{{msg}}</div> -->
+        <!-- v-on:click==@click -->
+        <div @click="handleClick">{{msg}}</div>
       </div>
     <script>
         new Vue({
