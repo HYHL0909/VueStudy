@@ -13,4 +13,9 @@ v-text和v-html都可以显示，但是text会进行转义，而html不会进行
 - 给模板上的标签绑定事件，比如点击标签后内容发生改变<br/>
   v-on:click="函数"，函数定义在vue对象的methods属性里，修改内容的方法直接修改this.msg<br/>
   
-  ###第4次提交，模板指令
+### 第4次提交，模板指令实现属性绑定
+div在title里可以用模板指令 `v-bind :title ="title"`,在模板指令中的字符串已经不再是字符串而是js的表达式 ` v-bind: `缩写成`:` <br/>
+
+- 单向绑定：数据可以改变页面里的内容，页面里的改变不了数据中的内容 `:value="number"`
+- 双向数据绑定 
+双向绑定 input可以双向绑定，`v-model:value="number"`中修改number的值那么value的值会改变，而修改value，number的值也会改变。
